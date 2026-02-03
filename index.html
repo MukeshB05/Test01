@@ -115,14 +115,14 @@
                 }, i * 600); // 600ms = Very Slow
             });
 
-            setTimeout(() => welcome.classList.add('active'), letters.length * 600);
+            setTimeout(() => welcome.classList.add('active'), letters.length * 300);
             setTimeout(() => {
                 loader.style.opacity = '0';
                 setTimeout(() => {
                     loader.style.visibility = 'hidden';
                     document.body.style.overflow = 'auto';
                 }, 1200);
-            }, (letters.length * 600) + 2500);
+            }, (letters.length * 300) + 2500);
         });
     </script>
 </body>
